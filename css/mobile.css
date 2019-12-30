@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+
+    .products {
+        display: inherit;
+        height: auto;
+    }
+
+    .product {
+        margin-top: auto;
+    }
+
+    .features, .reviews, .reviews-list {
+        display: inherit;
+    }
+}

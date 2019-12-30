@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* Variables */
+:root {
+    --green-color: #7acc2d;
+    --white-color: white;
+    --black-color: #313337;
+    /* Typography */
+    --normal: 12px;
+    /* Spacing */
+    --space: 10px;
+    /* Box Shadow */
+    --box: 0px 0 2px 1px #e6e5e9;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: var(--green-color);
+    justify-content: space-between;
+    display: flex;
+    height: 64px;
+    align-items: center;
+    padding: 0 16px;
+}
+
+header img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    padding: var(--space);
+    color: var(--white-color);
+}
+
+nav ul {
+    display: inherit;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: gray;
+}
+
+nav li a:hover {
+    color: var(--white-color);
+}
+
+.section-product {
+    padding: 15%;
+    text-align: center;
+}
+
+.products {
+    background-image: url('https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/curve.png');
+    height: 200px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    margin-top: -320px;
+    padding: var(--space);
+}
+
+.product .content {
+    background-color: var(--white-color);
+    padding: var(--space);
+    box-shadow: var(--box);
+}
+
+.product-img {
+    text-align: center;
+}
+
+.product-button {
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    background-color: var(--green-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.product-button:hover {
+    background-color: #5e9e22;
+}
+
+.features {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.feature {
+    padding: 80px;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.reviews-list {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-list .review {
+    margin: 20px;
+    box-shadow: var(--box);
+}
+
+footer {
+    margin-top: 80px;
+    position: absolute;
+    background-position-y: bottom;
+    width: 100%;
+    height: 60px;
+    background-color: #313337;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.payment-module {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.payment-module img {
+    max-width: 150px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+label {
+    font-size: var(--normal);
+    margin-bottom: var(--space);
+}
+
+.payment-module-input {
+    margin-bottom: var(--space);
+    margin-top: 6px;
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.payment-module-button {
+    margin-top: 10px;
+}
